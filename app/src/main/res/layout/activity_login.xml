@@ -45,7 +45,8 @@
                 android:layout_marginTop="5dip"
                 android:layout_marginBottom="20dip"
                 android:singleLine="true"
-                android:inputType="textEmailAddress"/>
+                android:inputType="textEmailAddress"
+                android:id="@+id/etEmail" />
             <!--  Password Label -->
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -55,7 +56,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dip"
                 android:singleLine="true"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                android:id="@+id/etPassword" />
             <!-- Login button -->
             <Button android:id="@+id/btnLogin"
                 android:layout_width="fill_parent"
@@ -72,6 +74,16 @@
                 android:gravity="center"
                 android:textSize="20dip"
                 android:textColor="#228EC8"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Search without registiring"
+                android:id="@+id/link_to_mainpage"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="#228EC8"
+                android:textSize="15dp" />
 
         </LinearLayout>
         <!-- Login Form Ends -->
