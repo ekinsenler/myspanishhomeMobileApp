@@ -11,7 +11,7 @@ import java.util.Map;
  * Created by ekinmac on 13/07/16.
  */
 public class RegisterRequest extends StringRequest {
-    private static final String REGISTER_REQUEST_URL = "http://10.0.2.2:8888/register.php";
+    private static final String REGISTER_REQUEST_URL = "http://10.0.2.2:8888/mySpanishHome/Scripts/register.php";
     private Map<String, String> params;
 
     public RegisterRequest(String name, String email,String password, Response.Listener<String> listener) {
