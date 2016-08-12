@@ -53,7 +53,7 @@ public class LoginActivity extends Activity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.w("myApp", "Osman");
+                Log.w("myApp", "Clicked");
                 final String email = etEmail.getText().toString();
                 final String password = etPassword.getText().toString();
 

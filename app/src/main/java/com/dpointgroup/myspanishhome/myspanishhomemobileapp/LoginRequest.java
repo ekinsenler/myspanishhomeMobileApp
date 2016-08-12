@@ -10,7 +10,7 @@ import java.util.Map;
  * Created by ekinmac on 13/07/16.
  */
 public class LoginRequest extends StringRequest{
-    private static final String LOGIN_REQUEST_URL = "http://10.0.2.2:8888/mySpanishHome/Scripts/login.php";
+    private static final String LOGIN_REQUEST_URL = "http://10.0.2.2:8888/mySpanishHome/scripts/login.php";
     private Map<String, String> params;
 
     public LoginRequest(String email, String password, Response.Listener<String> listener) {
