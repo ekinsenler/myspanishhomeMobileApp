@@ -17,11 +17,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <ImageView
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/thumbnail"
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:id="@+id/imageView"
-            android:src="@drawable/image1" />
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp" />
         <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,14 +40,16 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="TITLE"
-            android:id="@+id/txtTitle" />
+            android:id="@+id/txtTitle"
+            android:padding="5dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Price: €"
-            android:id="@+id/txtPrice" />
+            android:id="@+id/txtPrice"
+            android:padding="5dp"/>
     </LinearLayout>
     </LinearLayout>
 

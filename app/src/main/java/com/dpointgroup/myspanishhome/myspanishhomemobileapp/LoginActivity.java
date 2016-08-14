@@ -14,7 +14,9 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.Volley;
+import com.dpointgroup.myspanishhome.myspanishhomemobileapp.App.AppController;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -87,9 +89,11 @@ public class LoginActivity extends Activity {
                         }
                     }
                 };
-                LoginRequest loginRequest = new LoginRequest(email, password, responseListener);
-                RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
-                queue.add(loginRequest);
+
+                    LoginRequest loginRequest = new LoginRequest(email, password, responseListener);
+                    AppController.getInstance().addToRequestQueue(loginRequest, loginRequest.LOGIN_REQUEST_TAG);
+                //RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
+                //queue.add(loginRequest);
             }
         });
     }

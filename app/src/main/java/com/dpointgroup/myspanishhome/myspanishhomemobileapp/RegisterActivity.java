@@ -13,6 +13,7 @@ import android.view.View;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.dpointgroup.myspanishhome.myspanishhomemobileapp.App.AppController;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -69,10 +70,11 @@ public class RegisterActivity extends Activity {
                     }
                 };
                 RegisterRequest registerRequest = new RegisterRequest(name, email, password, responseListener);
-                RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
-                queue.add(registerRequest);
+                AppController.getInstance().addToRequestQueue(registerRequest, registerRequest.REGISTER_REQUEST_TAG);
+                //RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
+                //queue.add(registerRequest);
             }
         });
-
+    
     }
 }

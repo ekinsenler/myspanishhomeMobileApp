@@ -8,5 +8,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.dpointgroup.myspanishhome.myspanishhomemobileapp.MainActivity">
+    <ListView
+        android:id="@+id/room_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp">
+    </ListView>
 
 </RelativeLayout>

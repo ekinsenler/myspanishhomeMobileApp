@@ -8,10 +8,17 @@ import java.util.List;
 public class Room {
     private int room_id;
     private String title;
-    private String description;
     private float price;
-    private List<Image> images;
     private float rating;
+    private String thumbnailURL;
+
+    public String getThumbnailURL() {
+        return thumbnailURL;
+    }
+
+    public void setThumbnailURL(String thumbnailURL) {
+        this.thumbnailURL = thumbnailURL;
+    }
 
     public float getRating() {
         return rating;
@@ -37,13 +44,6 @@ public class Room {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     public float getPrice() {
         return price;
@@ -51,34 +51,5 @@ public class Room {
 
     public void setPrice(float price) {
         this.price = price;
-    }
-
-    public List<Image> getImages() {
-        return images;
-    }
-
-    public void setImages(List<Image> images) {
-        this.images = images;
-    }
-
-    public static class Image {
-        private int image_id;
-        private String URL;
-
-        public int getImage_id() {
-            return image_id;
-        }
-
-        public void setImage_id(int image_id) {
-            this.image_id = image_id;
-        }
-
-        public String getURL() {
-            return URL;
-        }
-
-        public void setURL(String URL) {
-            this.URL = URL;
-        }
     }
 }
